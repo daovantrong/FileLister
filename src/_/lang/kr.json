@@ -106,7 +106,8 @@
     "audio": "오디오",
     "document": "문서",
     "archive": "압축 파일",
-    "code": "코드"
+    "code": "코드",
+    "other": "기타"
   },
   "footer": {
     "powered_by": "제공",

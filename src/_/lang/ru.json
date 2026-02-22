@@ -106,7 +106,8 @@
     "audio": "Аудио",
     "document": "Документы",
     "archive": "Архивы",
-    "code": "Код"
+    "code": "Код",
+    "other": "Другое"
   },
   "footer": {
     "powered_by": "Работает на",

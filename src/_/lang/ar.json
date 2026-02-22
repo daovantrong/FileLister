@@ -106,7 +106,8 @@
     "audio": "صوت",
     "document": "مستندات",
     "archive": "أرشيف",
-    "code": "كود"
+    "code": "كود",
+    "other": "آخر"
   },
   "footer": {
     "powered_by": "مدعوم من",

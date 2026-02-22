@@ -106,7 +106,8 @@
     "audio": "音频",
     "document": "文档",
     "archive": "压缩包",
-    "code": "代码"
+    "code": "代码",
+    "other": "其他"
   },
   "footer": {
     "powered_by": "技术支持",

@@ -106,7 +106,8 @@
     "audio": "שמע",
     "document": "מסמכים",
     "archive": "ארכיונים",
-    "code": "קוד"
+    "code": "קוד",
+    "other": "אחר"
   },
   "footer": {
     "powered_by": "מופעל על ידי",

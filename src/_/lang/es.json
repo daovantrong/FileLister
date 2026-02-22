@@ -106,7 +106,8 @@
     "audio": "Audio",
     "document": "Documentos",
     "archive": "Archivos",
-    "code": "Código"
+    "code": "Código",
+    "other": "Otro"
   },
   "footer": {
     "powered_by": "Desarrollado por",

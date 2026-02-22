@@ -106,7 +106,8 @@
     "audio": "Âm thanh",
     "document": "Tài liệu",
     "archive": "Lưu trữ",
-    "code": "Mã nguồn"
+    "code": "Mã nguồn",
+    "other": "Khác"
   },
   "footer": {
     "powered_by": "Cung cấp bởi",

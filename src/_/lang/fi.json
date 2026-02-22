@@ -106,7 +106,8 @@
     "audio": "Ääni",
     "document": "Asiakirjat",
     "archive": "Arkistot",
-    "code": "Koodi"
+    "code": "Koodi",
+    "other": "Muu"
   },
   "footer": {
     "powered_by": "Palvelun tarjoaa",

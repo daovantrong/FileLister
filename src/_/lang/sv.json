@@ -106,7 +106,8 @@
     "audio": "Ljud",
     "document": "Dokument",
     "archive": "Arkiv",
-    "code": "Kod"
+    "code": "Kod",
+    "other": "Annat"
   },
   "footer": {
     "powered_by": "Drivs av",

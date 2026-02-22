@@ -106,7 +106,8 @@
     "audio": "音声",
     "document": "文書",
     "archive": "アーカイブ",
-    "code": "コード"
+    "code": "コード",
+    "other": "その他"
   },
   "footer": {
     "powered_by": "提供",

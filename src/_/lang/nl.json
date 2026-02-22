@@ -106,7 +106,8 @@
     "audio": "Audio",
     "document": "Documenten",
     "archive": "Archieven",
-    "code": "Code"
+    "code": "Code",
+    "other": "Andere"
   },
   "footer": {
     "powered_by": "Mogelijk gemaakt door",

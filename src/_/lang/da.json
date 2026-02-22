@@ -106,7 +106,8 @@
     "audio": "Lyd",
     "document": "Dokumenter",
     "archive": "Arkiver",
-    "code": "Kode"
+    "code": "Kode",
+    "other": "Andet"
   },
   "footer": {
     "powered_by": "Drevet af",
