@@ -3,12 +3,12 @@ require_once 'core.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?= htmlspecialchars($lang) ?>">
-<!--
+<!-- Standard version
  *  ___ _ _     _    _    _           
  * | __(_) |___| |  (_)__| |_ ___ _ _ 
  * | _|| | / -_) |__| (_-<  _/ -_) '_|
  * |_| |_|_\___|____|_/__/\__\___|_| 
- * FileListe by TRONG.PRO
+ * FileListe by TRONG.PRO 
 -->
 
 <head>
