@@ -68,6 +68,19 @@ FileLister is a powerful, lightweight, and modern **PHP directory listing script
 
 ---
 
+## Screenshots
+
+### Media Preview & File Viewer
+![Media Preview](src/_/screenshot-media.jpg)
+
+### Themes 
+![1-2](src/_/screenshot-t1-2.jpg)
+![3-4](src/_/screenshot-t3-4.jpg)
+![5-6](src/_/screenshot-t5-6.jpg)
+![7](src/_/screenshot-t7.jpg)
+
+---
+
 ## 📦 Installation & Deployment Modes
 
 FileLister supports 4 deployment modes. Pick the one that fits your setup:
