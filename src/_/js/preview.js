@@ -313,7 +313,9 @@
          */
         async previewText(path, container) {
             try {
-                const response = await fetch(path);
+                // Use API endpoint instead of direct file access
+                const apiPath = `?action=preview_file&file=${encodeURIComponent(path)}`;
+                const response = await fetch(apiPath);
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }

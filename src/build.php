@@ -24,14 +24,17 @@ if (!is_dir($assetsDir))
 
 echo "Building Standalone.php...\n";
 
-// ── 1. Read core.php and index.php ─────────────────────────────────────────
+// Read core.php and index.php
 $coreSource = file_get_contents($coreFile);
 $indexSource = file_get_contents($indexFile);
 
-// Remove the require_once line from index.php
-$indexSource = preg_replace('/<\?php\s+(require|include)(_once)?\s*[\'"]core\.php[\'"]\s*;\s*\?>\s*/i', '', $indexSource);
+// Remove closing PHP tag from core.php to allow proper merging
+$coreSource = preg_replace('/\s*\?>\s*$/', '', $coreSource);
 
-// Combine them
+// Remove the opening PHP tag from index.php since we're merging into core.php
+$indexSource = preg_replace('/^\s*<\?php\s+require_once\s+[\'"]core\.php[\'"]\s*;\s*/', '', $indexSource);
+
+// Combine them - now core.php doesn't have closing tag, index.php doesn't have opening tag
 $source = $coreSource . "\n" . $indexSource;
 
 // ── 2. Set 'use_embedded' => true ─────────────────────────────────────────

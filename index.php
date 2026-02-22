@@ -1437,6 +1437,79 @@ if (isset($_GET['dir'])) {
     }
 }
 
+// ============================================================================
+// API HANDLERS (must be early to avoid loading unnecessary code)
+// ============================================================================
+
+// Handle API request for file preview
+if (isset($_GET['action']) && $_GET['action'] === 'preview_file') {
+    $file_path = $_GET['file'] ?? '';
+    
+    // Security: Normalize and validate file path
+    $file_path = str_replace('\\', '/', $file_path); // Normalize slashes
+    $file_path = ltrim($file_path, '/'); // Remove leading slash
+    
+    // Security: Prevent path traversal attempts
+    if (strpos($file_path, '..') !== false || strpos($file_path, "\0") !== false) {
+        http_response_code(403);
+        echo 'Forbidden: Invalid path';
+        exit;
+    }
+    
+    // Security: Check for forbidden file extensions
+    $forbidden_extensions = ['php', 'phtml', 'php3', 'php4', 'php5', 'phar', 'sh', 'bash', 'exe', 'bat', 'cmd', 'com', 'scr'];
+    $file_extension = strtolower(pathinfo($file_path, PATHINFO_EXTENSION));
+    if (in_array($file_extension, $forbidden_extensions)) {
+        http_response_code(403);
+        echo 'Forbidden: File type not allowed';
+        exit;
+    }
+    
+    // Security: Check file size limit (prevent reading huge files)
+    $max_file_size = 10 * 1024 * 1024; // 10MB limit
+    $full_path = $current_dir . '/' . $file_path;
+    
+    if (file_exists($full_path) && filesize($full_path) > $max_file_size) {
+        http_response_code(403);
+        echo 'Forbidden: File too large';
+        exit;
+    }
+    
+    // Security: ensure file is within current directory
+    $real_current = realpath($current_dir);
+    $real_file = realpath($full_path);
+    
+    if ($real_file === false || strpos($real_file, $real_current) !== 0) {
+        http_response_code(403);
+        echo 'Forbidden: Access denied';
+        exit;
+    }
+    
+    // Check if file exists and is readable
+    if (!is_file($full_path) || !is_readable($full_path)) {
+        http_response_code(404);
+        echo 'File not found';
+        exit;
+    }
+    
+    // Security: Check if file is allowed by configuration
+    if (!is_allowed($current_dir, $file_path)) {
+        http_response_code(403);
+        echo 'Forbidden: File not allowed';
+        exit;
+    }
+    
+    // Serve file content
+    $content = file_get_contents($full_path);
+    if ($content === false) {
+        http_response_code(500);
+        echo 'Error reading file';
+        exit;
+    }
+    
+    echo $content;
+    exit;
+}
 
 // Check for default index files
 if (!empty($config['serve_index_files']) && $config['serve_index_files']) {
@@ -5594,7 +5667,9 @@ Prism.languages.pascal = { directive: { pattern: /\{\$[\s\S]*?\}/, greedy: !0, a
          */
         async previewText(path, container) {
             try {
-                const response = await fetch(path);
+                // Use API endpoint instead of direct file access
+                const apiPath = `?action=preview_file&file=${encodeURIComponent(path)}`;
+                const response = await fetch(apiPath);
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }

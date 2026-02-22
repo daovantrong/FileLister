@@ -1,4 +1,6 @@
-<?php require_once 'core.php'; ?>
+<?php 
+require_once 'core.php'; 
+?>
 <!DOCTYPE html>
 <html lang="<?= htmlspecialchars($lang) ?>">
 <!--
