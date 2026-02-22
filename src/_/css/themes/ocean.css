@@ -1,0 +1,41 @@
+/**
+ * Ocean Theme (Dark Blue)
+ */
+[data-theme="ocean"] {
+    --bg-primary: #0f172a;
+    /* Slate 900 */
+    --bg-secondary: #1e293b;
+    /* Slate 800 */
+    --bg-tertiary: #334155;
+    /* Slate 700 */
+    --bg-hover: #334155;
+    /* Slate 700 - Hover state */
+    --bg-active: #475569;
+    /* Slate 600 - Active state */
+
+    --text-primary: #f1f5f9;
+    /* Slate 100 */
+    --text-secondary: #94a3b8;
+    /* Slate 400 */
+    --text-muted: #64748b;
+    /* Slate 500 */
+
+    --border-color: #334155;
+    /* Slate 700 */
+
+    --accent-primary: #06b6d4;
+    /* Cyan 500 */
+    --accent-hover: #0891b2;
+    /* Cyan 600 */
+    --accent-light: #155e75;
+    /* Cyan 900 */
+
+    --success: #22c55e;
+    --danger: #ef4444;
+    --warning: #eab308;
+    --info: #3b82f6;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5);
+}

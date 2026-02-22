@@ -1,0 +1,25 @@
+/**
+ * Light Theme
+ */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --bg-hover: #e9ecef;
+    --bg-active: #dee2e6;
+
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-muted: #adb5bd;
+
+    --border-color: #dee2e6;
+
+    --accent-primary: #0d6efd;
+    --accent-hover: #0b5ed7;
+    --accent-light: #cfe2ff;
+
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #0dcaf0;
+}

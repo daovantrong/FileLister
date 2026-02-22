@@ -1,0 +1,117 @@
+{
+  "title": "Directory Listing",
+  "search": "Search files and folders...",
+  "language": "Language",
+  "theme": "Theme",
+  "help": "Help & Shortcuts",
+  "view": {
+    "grid": "Grid",
+    "list": "List"
+  },
+  "sort": {
+    "label": "Sort",
+    "name_asc": "Name ↑",
+    "name_desc": "Name ↓",
+    "size_asc": "Size ↑",
+    "size_desc": "Size ↓",
+    "date_asc": "Date ↑",
+    "date_desc": "Date ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter": {
+    "label": "Filter",
+    "all": "All types",
+    "folder": "Folders",
+    "image": "Images",
+    "video": "Videos",
+    "audio": "Audio",
+    "document": "Documents",
+    "archive": "Archives",
+    "code": "Code",
+    "other": "Other"
+  },
+  "stats": {
+    "items": "items",
+    "folders": "folders",
+    "files": "files",
+    "total": "Total"
+  },
+  "actions": {
+    "download": "Download",
+    "share": "Share",
+    "preview": "Preview",
+    "copy_link": "Copy Link",
+    "qr_code": "QR Code",
+    "close": "Close",
+    "zoom_in": "Zoom In",
+    "zoom_out": "Zoom Out",
+    "reset_zoom": "Reset Zoom",
+    "preview_not_available": "Preview not available for this file type",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "view_rendered": "👁 View Rendered",
+    "view_source": "📝 View Source",
+    "preview_as_text": "Preview as text",
+    "file_hashes": "File Hashes",
+    "copy_list": "Copy List"
+  },
+  "messages": {
+    "empty": "No files found in this directory",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "link_copied": "Link copied to clipboard!",
+    "copy_failed": "Failed to copy link"
+  },
+  "shortcuts": {
+    "title": "Help & Documentation",
+    "keyboard_title": "Keyboard Shortcuts",
+    "search": "Focus search",
+    "escape": "Close modal / Unfocus search",
+    "arrows": "Navigate items",
+    "enter": "Open selected item",
+    "go_home": "Go to home",
+    "go_up": "Go up one level",
+    "show_help": "Show this help",
+    "export_title": "Fast Export (Query Parameters)",
+    "export_desc": "Append these parameters to the URL for quick data export. Add &download to save as file.",
+    "format_json": "JSON format",
+    "format_csv": "CSV format",
+    "format_tsv": "TSV format",
+    "format_ndjson": "NDJSON (Line-delimited JSON)"
+  },
+  "general": {
+    "home": "Home"
+  },
+  "toolbar": {
+    "view": "View:",
+    "sort": "Sort:",
+    "filter": "Filter:"
+  },
+  "sort_options": {
+    "name_asc": "Name ↑",
+    "name_desc": "Name ↓",
+    "size_asc": "Size ↑",
+    "size_desc": "Size ↓",
+    "date_asc": "Date ↑",
+    "date_desc": "Date ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter_options": {
+    "all": "All types",
+    "folder": "Folders",
+    "image": "Images",
+    "video": "Videos",
+    "audio": "Audio",
+    "document": "Documents",
+    "archive": "Archives",
+    "code": "Code"
+  },
+  "footer": {
+    "powered_by": "Powered by",
+    "your_ipv4": "Your IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "Checking..."
+  }
+}

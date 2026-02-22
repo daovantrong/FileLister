@@ -1,0 +1,99 @@
+# ============================================================
+# FileLister – Hardened Production Dockerfile
+# Base: php:8.2-apache (Debian Bookworm)
+# ============================================================
+
+FROM php:8.2-apache
+
+# ── 1. Metadata ───────────────────────────────────────────
+LABEL maintainer="FileLister"
+LABEL description="FileLister – secure PHP directory listing"
+
+# ── 2. System packages (minimal footprint) ────────────────
+# - libzip-dev  : PHP zip extension
+# - libpng-dev  : GD PNG support (thumbnails)
+# - libjpeg-dev : GD JPEG support (thumbnails)
+# - libwebp-dev : GD WebP support (thumbnails)
+# Clean apt cache in the same layer to keep image small.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libzip-dev \
+        libpng-dev \
+        libjpeg62-turbo-dev \
+        libwebp-dev \
+    && docker-php-ext-configure gd \
+        --with-jpeg \
+        --with-webp \
+    && docker-php-ext-install -j"$(nproc)" \
+        zip \
+        gd \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# ── 3. PHP hardening (php.ini overrides) ─────────────────
+# Disable dangerous functions, hide PHP version, enforce
+# production error handling even if enable_dev is toggled.
+RUN { \
+        echo "expose_php = Off"; \
+        echo "display_errors = Off"; \
+        echo "display_startup_errors = Off"; \
+        echo "log_errors = On"; \
+        echo "error_log = /var/log/apache2/php_error.log"; \
+        echo "error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT"; \
+        echo "allow_url_fopen = Off"; \
+        echo "allow_url_include = Off"; \
+        echo "file_uploads = Off"; \
+        echo "session.cookie_httponly = 1"; \
+        echo "session.cookie_samesite = Lax"; \
+        echo "session.use_strict_mode = 1"; \
+        echo "disable_functions = exec,passthru,shell_exec,system,proc_open,popen,parse_ini_file,show_source"; \
+    } > /usr/local/etc/php/conf.d/filelister-security.ini
+
+# ── 4. Apache hardening ───────────────────────────────────
+# Enable required modules; disable unnecessary ones.
+RUN a2enmod rewrite headers expires deflate \
+    && a2dismod status \
+    && a2dismod autoindex \
+    && a2dissite 000-default.conf
+
+# Server token: hide Apache version from response headers
+RUN echo "ServerTokens Prod" >> /etc/apache2/apache2.conf \
+    && echo "ServerSignature Off" >> /etc/apache2/apache2.conf \
+    && echo "TraceEnable Off"     >> /etc/apache2/apache2.conf
+
+# ── 5. Virtual Host – principle of least privilege ────────
+# DocumentRoot is /var/www/html/public (not /).
+# AllowOverride only where needed; deny everything else.
+COPY docker/vhost.conf /etc/apache2/sites-available/filelister.conf
+RUN a2ensite filelister.conf
+
+# ── 6. Copy application files ─────────────────────────────
+WORKDIR /var/www/html
+
+# Copy only what the application needs – build.php, .env,
+# docker files, etc. are excluded via .dockerignore.
+COPY . /var/www/html/
+
+# ── 7. File permissions ───────────────────────────────────
+# Web root owned by root:www-data; www-data gets read + execute only.
+# Writable temp directories are provided via Docker tmpfs volumes
+# (see docker-compose.yml), not inside the image itself.
+RUN chown -R root:www-data /var/www/html \
+    && find /var/www/html -type d -exec chmod 750 {} \; \
+    && find /var/www/html -type f -exec chmod 640 {} \; \
+    # index.php must be readable and executable by Apache
+    && chmod 644 /var/www/html/index.php
+
+# ── 8. Create non-writable temp placeholder dirs ─────────
+# Actual writable directories are mounted as tmpfs at runtime.
+RUN mkdir -p /var/www/tmp/hashes /var/www/tmp/ratelimit \
+    && chown -R www-data:www-data /var/www/tmp \
+    && chmod -R 770 /var/www/tmp
+
+# ── 9. Health check ───────────────────────────────────────
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl -fsSo /dev/null http://localhost/ || exit 1
+
+# ── 10. Runtime ───────────────────────────────────────────
+EXPOSE 80
+# Apache runs as www-data (uid 33) inside the container.
+# docker-compose enforces no-new-privileges at the runtime level.

@@ -1,0 +1,117 @@
+{
+  "title": "Lista de Directorios",
+  "search": "Buscar archivos y carpetas...",
+  "language": "Idioma",
+  "theme": "Tema",
+  "help": "Ayuda y Atajos",
+  "view": {
+    "grid": "Cuadrícula",
+    "list": "Lista"
+  },
+  "sort": {
+    "label": "Ordenar",
+    "name_asc": "Nombre ↑",
+    "name_desc": "Nombre ↓",
+    "size_asc": "Tamaño ↑",
+    "size_desc": "Tamaño ↓",
+    "date_asc": "Fecha ↑",
+    "date_desc": "Fecha ↓",
+    "type_asc": "Tipo ↑",
+    "type_desc": "Tipo ↓"
+  },
+  "filter": {
+    "label": "Filtrar",
+    "all": "Todos los tipos",
+    "folder": "Carpetas",
+    "image": "Imágenes",
+    "video": "Videos",
+    "audio": "Audio",
+    "document": "Documentos",
+    "archive": "Archivos",
+    "code": "Código",
+    "other": "Otros"
+  },
+  "stats": {
+    "items": "elementos",
+    "folders": "carpetas",
+    "files": "archivos",
+    "total": "Total"
+  },
+  "actions": {
+    "download": "Descargar",
+    "share": "Compartir",
+    "preview": "Vista previa",
+    "copy_link": "Copiar enlace",
+    "qr_code": "Código QR",
+    "close": "Cerrar",
+    "zoom_in": "Acercar",
+    "zoom_out": "Alejar",
+    "reset_zoom": "Restablecer zoom",
+    "preview_not_available": "Vista previa no disponible para este tipo de archivo",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "view_rendered": "👁 Ver renderizado",
+    "view_source": "📝 Ver código fuente",
+    "preview_as_text": "Vista previa como texto",
+    "file_hashes": "Hashes de archivo",
+    "copy_list": "Copiar lista"
+  },
+  "messages": {
+    "empty": "No se encontraron archivos en este directorio",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "link_copied": "¡Enlace copiado al portapapeles!",
+    "copy_failed": "Error al copiar el enlace"
+  },
+  "shortcuts": {
+    "title": "Ayuda y Documentación",
+    "keyboard_title": "Atajos de teclado",
+    "search": "Enfocar búsqueda",
+    "escape": "Cerrar modal / Desenfocar búsqueda",
+    "arrows": "Navegar por elementos",
+    "enter": "Abrir elemento seleccionado",
+    "go_home": "Ir al inicio",
+    "go_up": "Subir un nivel",
+    "show_help": "Mostrar esta ayuda",
+    "export_title": "Exportación rápida (Parámetros de consulta)",
+    "export_desc": "Agregue estos parámetros a la URL para una exportación rápida de datos. Agregue &download para guardar como archivo.",
+    "format_json": "Formato JSON",
+    "format_csv": "Formato CSV",
+    "format_tsv": "Formato TSV",
+    "format_ndjson": "NDJSON (JSON delimitado por líneas)"
+  },
+  "general": {
+    "home": "Inicio"
+  },
+  "toolbar": {
+    "view": "Vista:",
+    "sort": "Ordenar:",
+    "filter": "Filtrar:"
+  },
+  "sort_options": {
+    "name_asc": "Nombre ↑",
+    "name_desc": "Nombre ↓",
+    "size_asc": "Tamaño ↑",
+    "size_desc": "Tamaño ↓",
+    "date_asc": "Fecha ↑",
+    "date_desc": "Fecha ↓",
+    "type_asc": "Tipo ↑",
+    "type_desc": "Tipo ↓"
+  },
+  "filter_options": {
+    "all": "Todos los tipos",
+    "folder": "Carpetas",
+    "image": "Imágenes",
+    "video": "Videos",
+    "audio": "Audio",
+    "document": "Documentos",
+    "archive": "Archivos",
+    "code": "Código"
+  },
+  "footer": {
+    "powered_by": "Desarrollado por",
+    "your_ipv4": "Su IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "Comprobando..."
+  }
+}

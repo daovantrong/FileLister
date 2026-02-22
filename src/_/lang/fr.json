@@ -1,0 +1,117 @@
+{
+  "title": "Liste des répertoires",
+  "search": "Rechercher des fichiers et dossiers...",
+  "language": "Langue",
+  "theme": "Thème",
+  "help": "Aide et raccourcis",
+  "view": {
+    "grid": "Grille",
+    "list": "Liste"
+  },
+  "sort": {
+    "label": "Trier",
+    "name_asc": "Nom ↑",
+    "name_desc": "Nom ↓",
+    "size_asc": "Taille ↑",
+    "size_desc": "Taille ↓",
+    "date_asc": "Date ↑",
+    "date_desc": "Date ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter": {
+    "label": "Filtrer",
+    "all": "Tous les types",
+    "folder": "Dossiers",
+    "image": "Images",
+    "video": "Vidéos",
+    "audio": "Audio",
+    "document": "Documents",
+    "archive": "Archives",
+    "code": "Code",
+    "other": "Autre"
+  },
+  "stats": {
+    "items": "éléments",
+    "folders": "dossiers",
+    "files": "fichiers",
+    "total": "Total"
+  },
+  "actions": {
+    "download": "Télécharger",
+    "share": "Partager",
+    "preview": "Aperçu",
+    "copy_link": "Copier le lien",
+    "qr_code": "Code QR",
+    "close": "Fermer",
+    "zoom_in": "Zoom avant",
+    "zoom_out": "Zoom arrière",
+    "reset_zoom": "Réinitialiser le zoom",
+    "preview_not_available": "Aperçu non disponible pour ce type de fichier",
+    "copy": "Copier",
+    "copied": "Copié !",
+    "view_rendered": "👁 Afficher le rendu",
+    "view_source": "📝 Afficher la source",
+    "preview_as_text": "Aperçu en tant que texte",
+    "file_hashes": "Hashes de fichiers",
+    "copy_list": "Copier la liste"
+  },
+  "messages": {
+    "empty": "Aucun fichier trouvé dans ce répertoire",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "link_copied": "Lien copié dans le presse-papiers !",
+    "copy_failed": "Échec de la copie du lien"
+  },
+  "shortcuts": {
+    "title": "Aide et documentation",
+    "keyboard_title": "Raccourcis clavier",
+    "search": "Focus sur la recherche",
+    "escape": "Fermer le modal / Quitter la recherche",
+    "arrows": "Naviguer dans les éléments",
+    "enter": "Ouvrir l'élément sélectionné",
+    "go_home": "Aller à l'accueil",
+    "go_up": "Remonter d'un niveau",
+    "show_help": "Afficher cette aide",
+    "export_title": "Exportation rapide (Paramètres de requête)",
+    "export_desc": "Ajoutez ces paramètres à l'URL pour une exportation rapide des données. Ajoutez &download pour enregistrer en tant que fichier.",
+    "format_json": "Format JSON",
+    "format_csv": "Format CSV",
+    "format_tsv": "Format TSV",
+    "format_ndjson": "NDJSON (JSON délimité par des lignes)"
+  },
+  "general": {
+    "home": "Accueil"
+  },
+  "toolbar": {
+    "view": "Vue :",
+    "sort": "Tri :",
+    "filter": "Filtre :"
+  },
+  "sort_options": {
+    "name_asc": "Nom ↑",
+    "name_desc": "Nom ↓",
+    "size_asc": "Taille ↑",
+    "size_desc": "Taille ↓",
+    "date_asc": "Date ↑",
+    "date_desc": "Date ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter_options": {
+    "all": "Tous les types",
+    "folder": "Dossiers",
+    "image": "Images",
+    "video": "Vidéos",
+    "audio": "Audio",
+    "document": "Documents",
+    "archive": "Archives",
+    "code": "Code"
+  },
+  "footer": {
+    "powered_by": "Propulsé par",
+    "your_ipv4": "Votre adresse IPv4 :",
+    "your_ipv6": "IPv6 :",
+    "checking": "Vérification..."
+  }
+}

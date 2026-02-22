@@ -1,0 +1,117 @@
+{
+  "title": "Hakemistoluettelo",
+  "search": "Hae tiedostoja ja kansioita...",
+  "language": "Kieli",
+  "theme": "Teema",
+  "help": "Ohje ja pikanäppäimet",
+  "view": {
+    "grid": "Ruudukko",
+    "list": "Luettelo"
+  },
+  "sort": {
+    "label": "Lajittele",
+    "name_asc": "Nimi ↑",
+    "name_desc": "Nimi ↓",
+    "size_asc": "Koko ↑",
+    "size_desc": "Koko ↓",
+    "date_asc": "Päivämäärä ↑",
+    "date_desc": "Päivämäärä ↓",
+    "type_asc": "Tyyppi ↑",
+    "type_desc": "Tyyppi ↓"
+  },
+  "filter": {
+    "label": "Suodata",
+    "all": "Kaikki tyypit",
+    "folder": "Kansiot",
+    "image": "Kuvat",
+    "video": "Videot",
+    "audio": "Ääni",
+    "document": "Asiakirjat",
+    "archive": "Arkistot",
+    "code": "Koodi",
+    "other": "Muu"
+  },
+  "stats": {
+    "items": "kohdetta",
+    "folders": "kansiota",
+    "files": "tiedostoa",
+    "total": "Yhteensä"
+  },
+  "actions": {
+    "download": "Lataa",
+    "share": "Jaa",
+    "preview": "Esikatselu",
+    "copy_link": "Kopioi linkki",
+    "qr_code": "QR-koodi",
+    "close": "Sulje",
+    "zoom_in": "Lähennä",
+    "zoom_out": "Loitonna",
+    "reset_zoom": "Nollaa zoomaus",
+    "preview_not_available": "Esikatselu ei ole käytettävissä tälle tiedostotyypille",
+    "copy": "Kopioi",
+    "copied": "Kopioitu!",
+    "view_rendered": "👁 Näytä renderöity",
+    "view_source": "📝 Näytä lähde",
+    "preview_as_text": "Esikatselu tekstinä",
+    "file_hashes": "Tiedoston tiivisteet",
+    "copy_list": "Kopioi lista"
+  },
+  "messages": {
+    "empty": "Tästä hakemistosta ei löytynyt tiedostoja",
+    "loading": "Ladataan...",
+    "error": "Tapahtui virhe",
+    "link_copied": "Linkki kopioitu leikepöydälle!",
+    "copy_failed": "Linkin kopiointi epäonnistui"
+  },
+  "shortcuts": {
+    "title": "Ohje ja dokumentaatio",
+    "keyboard_title": "Pikanäppäimet",
+    "search": "Kohdista hakuun",
+    "escape": "Sulje modaali / Poista haku kohdistuksesta",
+    "arrows": "Selaa kohteita",
+    "enter": "Avaa valittu kohde",
+    "go_home": "Mene aloitussivulle",
+    "go_up": "Mene taso ylöspäin",
+    "show_help": "Näytä tämä ohje",
+    "export_title": "Nopea vienti (Kyselyparametrit)",
+    "export_desc": "Lisää nämä parametrit URL-osoitteeseen nopeaa tietojen vientiä varten. Lisää &download tallentaaksesi tiedostona.",
+    "format_json": "JSON-muoto",
+    "format_csv": "CSV-muoto",
+    "format_tsv": "TSV-muoto",
+    "format_ndjson": "NDJSON (Riveittäin eroteltu JSON)"
+  },
+  "general": {
+    "home": "Koti"
+  },
+  "toolbar": {
+    "view": "Näkymä:",
+    "sort": "Lajittelu:",
+    "filter": "Suodatus:"
+  },
+  "sort_options": {
+    "name_asc": "Nimi ↑",
+    "name_desc": "Nimi ↓",
+    "size_asc": "Koko ↑",
+    "size_desc": "Koko ↓",
+    "date_asc": "Päivämäärä ↑",
+    "date_desc": "Päivämäärä ↓",
+    "type_asc": "Tyyppi ↑",
+    "type_desc": "Tyyppi ↓"
+  },
+  "filter_options": {
+    "all": "Kaikki tyypit",
+    "folder": "Kansiot",
+    "image": "Kuvat",
+    "video": "Videot",
+    "audio": "Ääni",
+    "document": "Asiakirjat",
+    "archive": "Arkistot",
+    "code": "Koodi"
+  },
+  "footer": {
+    "powered_by": "Palvelun tarjoaa",
+    "your_ipv4": "IPv4-osoitteesi:",
+    "your_ipv6": "IPv6:",
+    "checking": "Tarkistetaan..."
+  }
+}

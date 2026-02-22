@@ -1,0 +1,37 @@
+/**
+ * Forest Theme (Sophisticated Deep Forest)
+ * A dark theme with deep charcoal-greens and soft mint accents.
+ */
+[data-theme="forest"] {
+    --bg-primary: #0d1a15;
+    /* Very dark forest black */
+    --bg-secondary: #1a2e26;
+    /* Deep forest green */
+    --bg-tertiary: #2a4539;
+    /* Forest charcoal */
+    --bg-hover: #2a4539;
+    --bg-active: #3e6251;
+
+    --text-primary: #e6f2ee;
+    /* Soft ivory-green */
+    --text-secondary: #94b8a9;
+    /* Desaturated sage */
+    --text-muted: #5e8474;
+    /* Muted forest */
+
+    --border-color: #243b32;
+
+    --accent-primary: #3cd399;
+    /* Bright mint-green */
+    --accent-hover: #5eead4;
+    --accent-light: #0d1a15;
+
+    --success: #3cd399;
+    --danger: #ff6b6b;
+    --warning: #ffd93d;
+    --info: #4cc9f0;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.6);
+}

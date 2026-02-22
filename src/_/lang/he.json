@@ -1,0 +1,117 @@
+{
+  "title": "רשימת תיקיות",
+  "search": "חיפוש קבצים ותיקיות...",
+  "language": "שפה",
+  "theme": "עיצוב",
+  "help": "עזרה וקיצורי דרך",
+  "view": {
+    "grid": "רשת",
+    "list": "רשימה"
+  },
+  "sort": {
+    "label": "מיון",
+    "name_asc": "שם ↑",
+    "name_desc": "שם ↓",
+    "size_asc": "גודל ↑",
+    "size_desc": "גודל ↓",
+    "date_asc": "תאריך ↑",
+    "date_desc": "תאריך ↓",
+    "type_asc": "סוג ↑",
+    "type_desc": "סוג ↓"
+  },
+  "filter": {
+    "label": "סינון",
+    "all": "כל הסוגים",
+    "folder": "תיקיות",
+    "image": "תמונות",
+    "video": "סרטונים",
+    "audio": "שמע",
+    "document": "מסמכים",
+    "archive": "ארכיונים",
+    "code": "קוד",
+    "other": "אחר"
+  },
+  "stats": {
+    "items": "פריטים",
+    "folders": "תיקיות",
+    "files": "קבצים",
+    "total": "סה\"כ"
+  },
+  "actions": {
+    "download": "הורדה",
+    "share": "שיתוף",
+    "preview": "תצוגה מקדימה",
+    "copy_link": "העתקת קישור",
+    "qr_code": "קוד QR",
+    "close": "סגירה",
+    "zoom_in": "הגדלה",
+    "zoom_out": "הקטנה",
+    "reset_zoom": "איפוס זום",
+    "preview_not_available": "תצוגה מקדימה אינה זמינה לסוג קובץ זה",
+    "copy": "העתק",
+    "copied": "הועתק!",
+    "view_rendered": "👁 הצג מעובד",
+    "view_source": "📝 הצג מקור",
+    "preview_as_text": "תצוגה מקדימה כטקסט",
+    "file_hashes": "האשים של הקובץ",
+    "copy_list": "העתק רשימה"
+  },
+  "messages": {
+    "empty": "לא נמצאו קבצים בתיקייה זו",
+    "loading": "טוען...",
+    "error": "אירעה שגיאה",
+    "link_copied": "הקישור הועתק ללוח!",
+    "copy_failed": "העתקת הקישור נכשלה"
+  },
+  "shortcuts": {
+    "title": "עזרה ותיעוד",
+    "keyboard_title": "קיצורי מקלדת",
+    "search": "מיקוד בחיפוש",
+    "escape": "סגירת מודל / ביטול מיקוד בחיפוש",
+    "arrows": "ניווט בין פריטים",
+    "enter": "פתיחת פריט נבחר",
+    "go_home": "מעבר לדף הבית",
+    "go_up": "עלייה רמה אחת למעלה",
+    "show_help": "הצגת עזרה זו",
+    "export_title": "ייצוא מהיר (פרמטרי שאילתה)",
+    "export_desc": "הוסף פרמטרים אלה ל-URL לייצוא נתונים מהיר. הוסף &download לשמירה כקובץ.",
+    "format_json": "פורמט JSON",
+    "format_csv": "פורמט CSV",
+    "format_tsv": "פורמט TSV",
+    "format_ndjson": "NDJSON (JSON מופרד בשורות)"
+  },
+  "general": {
+    "home": "בית"
+  },
+  "toolbar": {
+    "view": "תצוגה:",
+    "sort": "מיון:",
+    "filter": "סינון:"
+  },
+  "sort_options": {
+    "name_asc": "שם ↑",
+    "name_desc": "שם ↓",
+    "size_asc": "גודל ↑",
+    "size_desc": "גודל ↓",
+    "date_asc": "תאריך ↑",
+    "date_desc": "תאריך ↓",
+    "type_asc": "סוג ↑",
+    "type_desc": "סוג ↓"
+  },
+  "filter_options": {
+    "all": "כל הסוגים",
+    "folder": "תיקיות",
+    "image": "תמונות",
+    "video": "סרטונים",
+    "audio": "שמע",
+    "document": "מסמכים",
+    "archive": "ארכיונים",
+    "code": "קוד"
+  },
+  "footer": {
+    "powered_by": "מופעל על ידי",
+    "your_ipv4": "ה-IPv4 שלך:",
+    "your_ipv6": "IPv6:",
+    "checking": "בודק..."
+  }
+}

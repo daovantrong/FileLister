@@ -1,0 +1,117 @@
+{
+  "title": "Mappelista",
+  "search": "Sök filer och mappar...",
+  "language": "Språk",
+  "theme": "Tema",
+  "help": "Hjälp & genvägar",
+  "view": {
+    "grid": "Rutnät",
+    "list": "Lista"
+  },
+  "sort": {
+    "label": "Sortera",
+    "name_asc": "Namn ↑",
+    "name_desc": "Namn ↓",
+    "size_asc": "Storlek ↑",
+    "size_desc": "Storlek ↓",
+    "date_asc": "Datum ↑",
+    "date_desc": "Datum ↓",
+    "type_asc": "Typ ↑",
+    "type_desc": "Typ ↓"
+  },
+  "filter": {
+    "label": "Filter",
+    "all": "Alla typer",
+    "folder": "Mappar",
+    "image": "Bilder",
+    "video": "Videor",
+    "audio": "Ljud",
+    "document": "Dokument",
+    "archive": "Arkiv",
+    "code": "Kod",
+    "other": "Annat"
+  },
+  "stats": {
+    "items": "objekt",
+    "folders": "mappar",
+    "files": "filer",
+    "total": "Totalt"
+  },
+  "actions": {
+    "download": "Ladda ner",
+    "share": "Dela",
+    "preview": "Förhandsvisning",
+    "copy_link": "Kopiera länk",
+    "qr_code": "QR-kod",
+    "close": "Stäng",
+    "zoom_in": "Zooma in",
+    "zoom_out": "Zooma ut",
+    "reset_zoom": "Återställ zoom",
+    "preview_not_available": "Förhandsvisning är inte tillgänglig för denna filtyp",
+    "copy": "Kopiera",
+    "copied": "Kopierat!",
+    "view_rendered": "👁 Visa renderad",
+    "view_source": "📝 Visa källa",
+    "preview_as_text": "Förhandsgranska som text",
+    "file_hashes": "Fil-hashar",
+    "copy_list": "Kopiera lista"
+  },
+  "messages": {
+    "empty": "Inga filer hittades i denna mapp",
+    "loading": "Laddar...",
+    "error": "Ett fel uppstod",
+    "link_copied": "Länken kopierad till urklipp!",
+    "copy_failed": "Misslyckades att kopiera länk"
+  },
+  "shortcuts": {
+    "title": "Hjälp & dokumentation",
+    "keyboard_title": "Tangentbordsgenvägar",
+    "search": "Fokusera sök",
+    "escape": "Stäng modal / Avfokusera sök",
+    "arrows": "Navigera bland objekt",
+    "enter": "Öppna markerat objekt",
+    "go_home": "Gå till hemsidan",
+    "go_up": "Gå upp en nivå",
+    "show_help": "Visa denna hjälp",
+    "export_title": "Snabb export (Frågeparametrar)",
+    "export_desc": "Lägg till dessa parametrar i URL:en för snabb dataexport. Lägg till &download för att spara som fil.",
+    "format_json": "JSON-format",
+    "format_csv": "CSV-format",
+    "format_tsv": "TSV-format",
+    "format_ndjson": "NDJSON (Radseparerad JSON)"
+  },
+  "general": {
+    "home": "Hem"
+  },
+  "toolbar": {
+    "view": "Vy:",
+    "sort": "Sortering:",
+    "filter": "Filter:"
+  },
+  "sort_options": {
+    "name_asc": "Namn ↑",
+    "name_desc": "Namn ↓",
+    "size_asc": "Storlek ↑",
+    "size_desc": "Storlek ↓",
+    "date_asc": "Datum ↑",
+    "date_desc": "Datum ↓",
+    "type_asc": "Typ ↑",
+    "type_desc": "Typ ↓"
+  },
+  "filter_options": {
+    "all": "Alla typer",
+    "folder": "Mappar",
+    "image": "Bilder",
+    "video": "Videor",
+    "audio": "Ljud",
+    "document": "Dokument",
+    "archive": "Arkiv",
+    "code": "Kod"
+  },
+  "footer": {
+    "powered_by": "Drivs av",
+    "your_ipv4": "Din IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "Kontrollerar..."
+  }
+}

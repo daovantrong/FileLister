@@ -1,0 +1,117 @@
+{
+  "title": "Mappeliste",
+  "search": "Søk i filer og mapper...",
+  "language": "Språk",
+  "theme": "Tema",
+  "help": "Hjelp og snarveier",
+  "view": {
+    "grid": "Rutenett",
+    "list": "Liste"
+  },
+  "sort": {
+    "label": "Sorter",
+    "name_asc": "Navn ↑",
+    "name_desc": "Navn ↓",
+    "size_asc": "Størrelse ↑",
+    "size_desc": "Størrelse ↓",
+    "date_asc": "Dato ↑",
+    "date_desc": "Dato ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter": {
+    "label": "Filter",
+    "all": "Alle typer",
+    "folder": "Mapper",
+    "image": "Bilder",
+    "video": "Videoer",
+    "audio": "Lyd",
+    "document": "Dokumenter",
+    "archive": "Arkiver",
+    "code": "Kode",
+    "other": "Annet"
+  },
+  "stats": {
+    "items": "elementer",
+    "folders": "mapper",
+    "files": "filer",
+    "total": "Totalt"
+  },
+  "actions": {
+    "download": "Last ned",
+    "share": "Del",
+    "preview": "Forhåndsvisning",
+    "copy_link": "Kopier lenke",
+    "qr_code": "QR-kode",
+    "close": "Lukk",
+    "zoom_in": "Zoom inn",
+    "zoom_out": "Zoom ut",
+    "reset_zoom": "Nullstill zoom",
+    "preview_not_available": "Forhåndsvisning er ikke tilgjengelig for denne filtypen",
+    "copy": "Kopier",
+    "copied": "Kopiert!",
+    "view_rendered": "👁 Vis gjengitt",
+    "view_source": "📝 Vis kilde",
+    "preview_as_text": "Forhåndsvis som tekst",
+    "file_hashes": "Fil-hasher",
+    "copy_list": "Kopier liste"
+  },
+  "messages": {
+    "empty": "Ingen filer funnet i denne mappen",
+    "loading": "Laster...",
+    "error": "Det oppstod en feil",
+    "link_copied": "Lenke kopiert til utklippstavle!",
+    "copy_failed": "Kunne ikke kopiere lenke"
+  },
+  "shortcuts": {
+    "title": "Hjelp og dokumentasjon",
+    "keyboard_title": "Tastatursnarveier",
+    "search": "Fokuser søk",
+    "escape": "Lukk modal / Fjern fokus fra søk",
+    "arrows": "Naviger i elementer",
+    "enter": "Åpne valgt element",
+    "go_home": "Gå til startside",
+    "go_up": "Gå opp ett nivå",
+    "show_help": "Vis denne hjelpen",
+    "export_title": "Rask eksport (Spørringsparametere)",
+    "export_desc": "Legg til disse parameterne i URL-en for rask dataeksport. Legg til &download for å lagre som fil.",
+    "format_json": "JSON-format",
+    "format_csv": "CSV-format",
+    "format_tsv": "TSV-format",
+    "format_ndjson": "NDJSON (Linje-delt JSON)"
+  },
+  "general": {
+    "home": "Hjem"
+  },
+  "toolbar": {
+    "view": "Visning:",
+    "sort": "Sortering:",
+    "filter": "Filter:"
+  },
+  "sort_options": {
+    "name_asc": "Navn ↑",
+    "name_desc": "Navn ↓",
+    "size_asc": "Størrelse ↑",
+    "size_desc": "Størrelse ↓",
+    "date_asc": "Dato ↑",
+    "date_desc": "Dato ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter_options": {
+    "all": "Alle typer",
+    "folder": "Mapper",
+    "image": "Bilder",
+    "video": "Videoer",
+    "audio": "Lyd",
+    "document": "Dokumenter",
+    "archive": "Arkiver",
+    "code": "Kode"
+  },
+  "footer": {
+    "powered_by": "Drevet av",
+    "your_ipv4": "Din IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "Sjekker..."
+  }
+}

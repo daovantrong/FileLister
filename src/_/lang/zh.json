@@ -1,0 +1,117 @@
+{
+  "title": "目录列表",
+  "search": "搜索文件和文件夹...",
+  "language": "语言",
+  "theme": "主题",
+  "help": "帮助与快捷键",
+  "view": {
+    "grid": "网格",
+    "list": "列表"
+  },
+  "sort": {
+    "label": "排序",
+    "name_asc": "名称 ↑",
+    "name_desc": "名称 ↓",
+    "size_asc": "大小 ↑",
+    "size_desc": "大小 ↓",
+    "date_asc": "日期 ↑",
+    "date_desc": "日期 ↓",
+    "type_asc": "类型 ↑",
+    "type_desc": "类型 ↓"
+  },
+  "filter": {
+    "label": "筛选",
+    "all": "所有类型",
+    "folder": "文件夹",
+    "image": "图片",
+    "video": "视频",
+    "audio": "音频",
+    "document": "文档",
+    "archive": "压缩包",
+    "code": "代码",
+    "other": "其他"
+  },
+  "stats": {
+    "items": "项",
+    "folders": "文件夹",
+    "files": "文件",
+    "total": "总计"
+  },
+  "actions": {
+    "download": "下载",
+    "share": "分享",
+    "preview": "预览",
+    "copy_link": "复制链接",
+    "qr_code": "二维码",
+    "close": "关闭",
+    "zoom_in": "放大",
+    "zoom_out": "缩小",
+    "reset_zoom": "重置缩放",
+    "preview_not_available": "此文件类型无法预览",
+    "copy": "复制",
+    "copied": "已复制！",
+    "view_rendered": "👁 查看渲染",
+    "view_source": "📝 查看源代码",
+    "preview_as_text": "以文本方式预览",
+    "file_hashes": "文件哈希",
+    "copy_list": "复制列表"
+  },
+  "messages": {
+    "empty": "此目录中没有文件",
+    "loading": "加载中...",
+    "error": "发生错误",
+    "link_copied": "链接已复制!",
+    "copy_failed": "复制链接失败"
+  },
+  "shortcuts": {
+    "title": "帮助与文档",
+    "keyboard_title": "键盘快捷键",
+    "search": "聚焦搜索",
+    "escape": "关闭 / 取消搜索",
+    "arrows": "导航项目",
+    "enter": "打开所选项目",
+    "go_home": "返回首页",
+    "go_up": "上一级",
+    "show_help": "显示帮助",
+    "export_title": "快速导出 (查询参数)",
+    "export_desc": "将这些参数添加到 URL 以进行快速数据导出。添加 &download 以保存为文件。",
+    "format_json": "JSON 格式",
+    "format_csv": "CSV 格式",
+    "format_tsv": "TSV 格式",
+    "format_ndjson": "NDJSON (行分隔 JSON)"
+  },
+  "general": {
+    "home": "首页"
+  },
+  "toolbar": {
+    "view": "视图:",
+    "sort": "排序:",
+    "filter": "筛选:"
+  },
+  "sort_options": {
+    "name_asc": "名称 ↑",
+    "name_desc": "名称 ↓",
+    "size_asc": "大小 ↑",
+    "size_desc": "大小 ↓",
+    "date_asc": "日期 ↑",
+    "date_desc": "日期 ↓",
+    "type_asc": "类型 ↑",
+    "type_desc": "类型 ↓"
+  },
+  "filter_options": {
+    "all": "所有类型",
+    "folder": "文件夹",
+    "image": "图片",
+    "video": "视频",
+    "audio": "音频",
+    "document": "文档",
+    "archive": "压缩包",
+    "code": "代码"
+  },
+  "footer": {
+    "powered_by": "技术支持",
+    "your_ipv4": "您的 IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "检查中..."
+  }
+}

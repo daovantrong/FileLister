@@ -1,0 +1,84 @@
+# ============================================================
+# FileLister – Environment Configuration
+# ============================================================
+# Copy this file to .env and adjust values for your deployment.
+# NEVER commit .env to version control (it is in .gitignore).
+# ============================================================
+
+# ── Application ───────────────────────────────────────────
+APP_TITLE=                        # Leave empty to auto-generate from path
+APP_TITLE_PREFIX="Index of "
+APP_LANGUAGE=                     # auto-detect if empty (en,vi,zh,es,fr,de,ja,kr,...)
+APP_THEME=ocean                   # light | dark | auto | ocean | forest | dracula | nord
+
+# ── Developer / Production mode ──────────────────────────
+# VUL-03 FIX: Keep false in production.
+# true  → display_errors ON, random asset version (breaks caching), no HSTS
+# false → display_errors OFF, logs to error_log, full security headers
+APP_ENV=production
+ENABLE_DEV=false
+
+# ── Display options ───────────────────────────────────────
+VIEW_MODE=list                    # grid | list
+SHOW_HIDDEN=false
+SHOW_ICONS=true
+SHOW_SIZE=true
+SHOW_DATE=true
+SHOW_TYPE=true
+SHOW_FOLDER_SIZE=false            # true may be slow for large trees
+SHOW_BREADCRUMB=true
+SHOW_FOOTER=true
+SHOW_COPYRIGHT=true
+
+# ── Features ──────────────────────────────────────────────
+ENABLE_SEARCH=true
+ENABLE_PREVIEW=true
+ENABLE_DOWNLOAD=true
+ENABLE_SHARE=true
+ENABLE_QRCODE=true
+ENABLE_SHORTCUTS=true
+ENABLE_CONTEXT_MENU=true
+
+# ── File hashing ──────────────────────────────────────────
+# VUL-07 FIX: MD5 and SHA-1 are cryptographically broken.
+# Removed from defaults. Add back only for legacy compatibility.
+ENABLE_HASHTYPE="CRC32,XXH128,SHA-256,SHA3-256"
+HASH_UPPERCASE=true
+# Max file size for hashing (bytes). Default: 1 GB.
+MAX_HASH_SIZE=1073741824
+
+# ── Rate limiting ─────────────────────────────────────────
+ENABLE_RATE_LIMIT=true
+RATE_LIMIT_REQUESTS=60            # max requests per window
+RATE_LIMIT_PERIOD=60              # window size in seconds
+# Comma-separated IPs exempt from rate limiting (localhost)
+RATE_LIMIT_EXCLUDE_IPS="127.0.0.1,::1"
+
+# ── Trusted proxies (VUL-02 FIX) ─────────────────────────
+# Only trust X-Forwarded-For / X-Real-IP headers when the
+# TCP connection comes from one of these IPs.
+# Set to your actual reverse-proxy / load-balancer IP(s).
+# Leave empty ("") if running directly without a proxy.
+#   Example (Cloudflare, single proxy, or LB):
+#   TRUSTED_PROXIES="10.0.0.1,172.16.0.254"
+TRUSTED_PROXIES=""
+
+# ── Advanced ──────────────────────────────────────────────
+DATE_FORMAT="Y-m-d H:i:s"
+TIMEZONE="Asia/Ho_Chi_Minh"
+MAX_PREVIEW_SIZE=10485760         # 10 MB
+THUMBNAIL_WIDTH=200
+THUMBNAIL_HEIGHT=200
+THUMBNAIL_DIRECTORY=              # e.g. '_/thumbs' (must be web-accessible)
+
+# Custom assets (leave empty to use defaults)
+CUSTOM_CSS=
+CUSTOM_JS=
+ASSETS_PATH=                      # e.g. 'static' or '/assets'
+USE_EMBEDDED=false
+BASE_PATH=                        # e.g. '/files'
+
+# Serve index.html when present in a directory
+# WARNING: XSS risk if untrusted files can be uploaded.
+SERVE_INDEX_FILES=false
+INDEX_FILES="index.html,index.htm,default.htm"

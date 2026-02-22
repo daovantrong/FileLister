@@ -1,0 +1,117 @@
+{
+  "title": "ディレクトリ一覧",
+  "search": "ファイルとフォルダを検索...",
+  "language": "言語",
+  "theme": "テーマ",
+  "help": "ヘルプとショートカット",
+  "view": {
+    "grid": "グリッド",
+    "list": "リスト"
+  },
+  "sort": {
+    "label": "並べ替え",
+    "name_asc": "名前 ↑",
+    "name_desc": "名前 ↓",
+    "size_asc": "サイズ ↑",
+    "size_desc": "サイズ ↓",
+    "date_asc": "日付 ↑",
+    "date_desc": "日付 ↓",
+    "type_asc": "タイプ ↑",
+    "type_desc": "タイプ ↓"
+  },
+  "filter": {
+    "label": "フィルター",
+    "all": "すべて",
+    "folder": "フォルダ",
+    "image": "画像",
+    "video": "動画",
+    "audio": "音声",
+    "document": "文書",
+    "archive": "アーカイブ",
+    "code": "コード",
+    "other": "その他"
+  },
+  "stats": {
+    "items": "アイテム",
+    "folders": "フォルダ",
+    "files": "ファイル",
+    "total": "合計"
+  },
+  "actions": {
+    "download": "ダウンロード",
+    "share": "共有",
+    "preview": "プレビュー",
+    "copy_link": "リンクをコピー",
+    "qr_code": "QRコード",
+    "close": "閉じる",
+    "zoom_in": "拡大",
+    "zoom_out": "縮小",
+    "reset_zoom": "リセット",
+    "preview_not_available": "このファイルタイプのプレビューは利用できません",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "view_rendered": "👁 レンダリング表示",
+    "view_source": "📝 ソースを表示",
+    "preview_as_text": "テキストとしてプレビュー",
+    "file_hashes": "ファイルハッシュ",
+    "copy_list": "リストをコピー"
+  },
+  "messages": {
+    "empty": "このディレクトリにファイルが見つかりません",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "link_copied": "リンクをコピーしました！",
+    "copy_failed": "リンクのコピーに失敗しました"
+  },
+  "shortcuts": {
+    "title": "ヘルプとドキュメント",
+    "keyboard_title": "キーボードショートカット",
+    "search": "検索にフォーカス",
+    "escape": "閉じる / 検索解除",
+    "arrows": "ナビゲート",
+    "enter": "選択したアイテムを開く",
+    "go_home": "ホームに移動",
+    "go_up": "一つ上のレベルへ",
+    "show_help": "ヘルプを表示",
+    "export_title": "高速エクスポート (クエリパラメーター)",
+    "export_desc": "クイックデータエクスポートのためにこれらのパラメーターをURLに追加します。ファイルとして保存するには &download を追加してください。",
+    "format_json": "JSON形式",
+    "format_csv": "CSV形式",
+    "format_tsv": "TSV形式",
+    "format_ndjson": "NDJSON (行区切りJSON)"
+  },
+  "general": {
+    "home": "ホーム"
+  },
+  "toolbar": {
+    "view": "表示:",
+    "sort": "並べ替え:",
+    "filter": "フィルター:"
+  },
+  "sort_options": {
+    "name_asc": "名前 ↑",
+    "name_desc": "名前 ↓",
+    "size_asc": "サイズ ↑",
+    "size_desc": "サイズ ↓",
+    "date_asc": "日付 ↑",
+    "date_desc": "日付 ↓",
+    "type_asc": "タイプ ↑",
+    "type_desc": "タイプ ↓"
+  },
+  "filter_options": {
+    "all": "すべて",
+    "folder": "フォルダ",
+    "image": "画像",
+    "video": "動画",
+    "audio": "音声",
+    "document": "文書",
+    "archive": "アーカイブ",
+    "code": "コード"
+  },
+  "footer": {
+    "powered_by": "提供",
+    "your_ipv4": "あなたの IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "確認中..."
+  }
+}

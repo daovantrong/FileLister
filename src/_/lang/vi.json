@@ -1,0 +1,117 @@
+{
+  "title": "Danh Sách Tệp",
+  "search": "Tìm kiếm tệp và thư mục...",
+  "language": "Ngôn ngữ",
+  "theme": "Giao diện",
+  "help": "Trợ giúp & Phím tắt",
+  "view": {
+    "grid": "Lưới",
+    "list": "Danh sách"
+  },
+  "sort": {
+    "label": "Sắp xếp",
+    "name_asc": "Tên ↑",
+    "name_desc": "Tên ↓",
+    "size_asc": "Kích thước ↑",
+    "size_desc": "Kích thước ↓",
+    "date_asc": "Ngày ↑",
+    "date_desc": "Ngày ↓",
+    "type_asc": "Loại ↑",
+    "type_desc": "Loại ↓"
+  },
+  "filter": {
+    "label": "Lọc",
+    "all": "Tất cả",
+    "folder": "Thư mục",
+    "image": "Hình ảnh",
+    "video": "Video",
+    "audio": "Âm thanh",
+    "document": "Tài liệu",
+    "archive": "Nén",
+    "code": "Mã nguồn",
+    "other": "Khác"
+  },
+  "stats": {
+    "items": "mục",
+    "folders": "thư mục",
+    "files": "tệp",
+    "total": "Tổng"
+  },
+  "actions": {
+    "download": "Tải xuống",
+    "share": "Chia sẻ",
+    "preview": "Xem trước",
+    "copy_link": "Sao chép liên kết",
+    "qr_code": "Mã QR",
+    "close": "Đóng",
+    "zoom_in": "Phóng to",
+    "zoom_out": "Thu nhỏ",
+    "reset_zoom": "Đặt lại",
+    "preview_not_available": "Không hỗ trợ xem trước loại tệp này",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "view_rendered": "👁 Xem hiển thị",
+    "view_source": "📝 Xem mã nguồn",
+    "preview_as_text": "Xem dạng văn bản",
+    "file_hashes": "Mã băm tệp",
+    "copy_list": "Sao chép danh sách"
+  },
+  "messages": {
+    "empty": "Không tìm thấy tệp nào trong thư mục này",
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "link_copied": "Đã sao chép liên kết!",
+    "copy_failed": "Không thể sao chép liên kết"
+  },
+  "shortcuts": {
+    "title": "Trợ giúp & Tài liệu",
+    "keyboard_title": "Phím tắt bàn phím",
+    "search": "Tìm kiếm",
+    "escape": "Đóng / Bỏ tìm kiếm",
+    "arrows": "Di chuyển",
+    "enter": "Mở mục đã chọn",
+    "go_home": "Về trang chủ",
+    "go_up": "Lên một cấp",
+    "show_help": "Hiện trợ giúp",
+    "export_title": "Xuất nhanh (Tham số truy vấn)",
+    "export_desc": "Thêm các tham số này vào URL để xuất dữ liệu nhanh. Thêm &download để lưu thành tệp.",
+    "format_json": "Định dạng JSON",
+    "format_csv": "Định dạng CSV",
+    "format_tsv": "Định dạng TSV",
+    "format_ndjson": "NDJSON (JSON phân tách theo dòng)"
+  },
+  "general": {
+    "home": "Trang chủ"
+  },
+  "toolbar": {
+    "view": "Xem:",
+    "sort": "Sắp xếp:",
+    "filter": "Lọc:"
+  },
+  "sort_options": {
+    "name_asc": "Tên ↑",
+    "name_desc": "Tên ↓",
+    "size_asc": "Kích thước ↑",
+    "size_desc": "Kích thước ↓",
+    "date_asc": "Ngày ↑",
+    "date_desc": "Ngày ↓",
+    "type_asc": "Loại ↑",
+    "type_desc": "Loại ↓"
+  },
+  "filter_options": {
+    "all": "Tất cả",
+    "folder": "Thư mục",
+    "image": "Hình ảnh",
+    "video": "Video",
+    "audio": "Âm thanh",
+    "document": "Tài liệu",
+    "archive": "Lưu trữ",
+    "code": "Mã nguồn"
+  },
+  "footer": {
+    "powered_by": "Cung cấp bởi",
+    "your_ipv4": "IPv4 của bạn:",
+    "your_ipv6": "IPv6:",
+    "checking": "Đang kiểm tra..."
+  }
+}

@@ -1,0 +1,84 @@
+/**
+ * Cute Theme (Anime & Glassmorphism)
+ */
+[data-theme="cute"] {
+    /* Background Image */
+    --bg-image: url('themes/anime-bg.jpg');
+    --bg-attachment: fixed;
+
+    /* Private variables for glassmorphism base colors */
+    --glass-base-light: 255, 255, 255;
+    --glass-base-dark: 20, 20, 30;
+
+    /* Transparent Backgrounds for better readability */
+    --bg-primary: rgba(var(--glass-base-light), 0.12);
+    --bg-secondary: rgba(var(--glass-base-light), 0.10);
+    --bg-tertiary: rgba(var(--glass-base-light), 0.08);
+    --bg-hover: rgba(var(--glass-base-light), 0.18);
+    --bg-active: rgba(var(--glass-base-light), 0.22);
+
+    /* Text Colors - Neutral Dark for better readability */
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+
+    --border-color: rgba(255, 255, 255, 0.15);
+
+    /* Cute Accents (Pink/Pastel) */
+    --accent-primary: #ff5c9d;
+    --accent-hover: #c92969;
+    --accent-light: rgba(255, 126, 179, 0.2);
+
+    --success: #69f0ae;
+    --danger: #ff5252;
+    --warning: #ffd740;
+    --info: #40c4ff;
+
+    /* Shadows for depth */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    /* Glass Effect Props - Subtle blur for readability without hiding background */
+    --backdrop-blur: blur(2px);
+    --border-radius: 16px;
+    --border-radius-sm: 8px;
+}
+
+/* specific tweaks for better visibility/cuteness */
+body[data-theme="cute"] {
+    background-color: #f3ebee;
+}
+
+body[data-theme="cute"] .title {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Make Modals (Preview, Hash, Share) clearer/more opaque for readability */
+body[data-theme="cute"] .modal-content,
+body[data-theme="cute"] .readme-container {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme="cute"] #notification-toast {
+    background: rgba(255, 255, 255, 0.95);
+    color: #440022;
+    border: 1px solid rgba(255, 126, 179, 0.5);
+    box-shadow: 0 8px 32px rgba(255, 126, 179, 0.3);
+}
+
+/* Add contrasting text outline (white glow) ONLY to specific elements */
+body[data-theme="cute"] .item-size,
+body[data-theme="cute"] .item-date,
+body[data-theme="cute"] .item-type,
+body[data-theme="cute"] .stats,
+body[data-theme="cute"] .stat-item,
+body[data-theme="cute"] .empty-state,
+body[data-theme="cute"] .footer,
+body[data-theme="cute"] #notification-toast {
+    /* Soft white glow/shadow for readability without hard edges */
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.9), 0 0 1px rgba(255, 255, 255, 0.5);
+}

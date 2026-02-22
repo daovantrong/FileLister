@@ -1,0 +1,123 @@
+# ============================================================
+# FileLister – Apache .htaccess (htaccess.example)
+# Rename/copy to .htaccess in your web root.
+# ============================================================
+
+# ── 1. Disable directory browsing ─────────────────────────
+Options -Indexes -MultiViews
+
+# ── 2. Entry point ────────────────────────────────────────
+DirectoryIndex index.php FileLister.php
+
+# ── 3. URL rewriting ──────────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+</IfModule>
+
+# ── 4. Block sensitive files ──────────────────────────────
+# Catch-all: .env, .git*, .htpasswd, composer.*, package*.json, etc.
+<FilesMatch "(\.(env|git|gitignore|gitattributes|htpasswd|DS_Store)|composer\.(json|lock)|package(-lock)?\.json|yarn\.lock)$">
+    <IfVersion >= 2.4>
+        Require all denied
+    </IfVersion>
+    <IfVersion < 2.4>
+        Order allow,deny
+        Deny from all
+    </IfVersion>
+</FilesMatch>
+
+# Block build/deployment files (VUL-03: build.php must not be web-accessible)
+<FilesMatch "^(build\.php|Dockerfile|docker-compose\.yml|Standalone\.php)$">
+    <IfVersion >= 2.4>
+        Require all denied
+    </IfVersion>
+    <IfVersion < 2.4>
+        Order allow,deny
+        Deny from all
+    </IfVersion>
+</FilesMatch>
+
+# Block dot-files and hidden items
+<FilesMatch "^\.">
+    <IfVersion >= 2.4>
+        Require all denied
+    </IfVersion>
+    <IfVersion < 2.4>
+        Order allow,deny
+        Deny from all
+    </IfVersion>
+</FilesMatch>
+
+# ── 5. Security headers ───────────────────────────────────
+# These headers apply to all responses served by Apache.
+# PHP (index.php) also sets its own headers; Apache's take
+# precedence for static files, PHP's for dynamic responses.
+<IfModule mod_headers.c>
+    # Hide server fingerprint
+    Header always unset Server
+    Header always unset X-Powered-By
+
+    # MIME-type enforcement
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Clickjacking protection
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Legacy XSS filter
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions-Policy: disable unused browser APIs
+    Header always set Permissions-Policy \
+        "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+
+    # VUL-04 NOTE: The full CSP with per-request nonce is set by index.php
+    # for PHP-generated pages. The line below covers static assets only.
+    # It must NOT include nonce (static files do not use inline scripts).
+    <FilesMatch "\.(css|js|svg|woff2?|ttf|otf|eot)$">
+        Header always set Content-Security-Policy \
+            "default-src 'none'; style-src 'self'; script-src 'self'; font-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self';"
+    </FilesMatch>
+
+    # HSTS – only safe to enable when the site runs on HTTPS exclusively
+    # Uncomment after you have a valid TLS certificate:
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# ── 6. Deny PHP execution inside asset subdirectories ─────
+# Prevents a malicious .php file dropped into _ from running.
+<IfModule mod_php.c>
+    <DirectoryMatch "^\./(_|assets|thumbs|uploads)">
+        php_flag engine off
+    </DirectoryMatch>
+</IfModule>
+# FastCGI / PHP-FPM variant:
+<FilesMatch "^\./(\_|assets|thumbs|uploads)/.*\.php$">
+    <IfVersion >= 2.4>
+        Require all denied
+    </IfVersion>
+</FilesMatch>
+
+# ── 7. Performance ────────────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg              "access plus 1 month"
+    ExpiresByType image/png               "access plus 1 month"
+    ExpiresByType image/gif               "access plus 1 month"
+    ExpiresByType image/webp              "access plus 1 month"
+    ExpiresByType image/svg+xml           "access plus 1 month"
+    ExpiresByType text/css                "access plus 1 week"
+    ExpiresByType application/javascript  "access plus 1 week"
+    ExpiresByType font/woff2              "access plus 1 year"
+    ExpiresByType font/woff               "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE \
+        text/html text/plain text/css \
+        application/javascript application/json \
+        image/svg+xml
+</IfModule>

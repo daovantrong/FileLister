@@ -1,0 +1,117 @@
+{
+  "title": "Mappenlijst",
+  "search": "Bestanden en mappen zoeken...",
+  "language": "Taal",
+  "theme": "Thema",
+  "help": "Help & Snelkoppelingen",
+  "view": {
+    "grid": "Raster",
+    "list": "Lijst"
+  },
+  "sort": {
+    "label": "Sorteren",
+    "name_asc": "Naam ↑",
+    "name_desc": "Naam ↓",
+    "size_asc": "Grootte ↑",
+    "size_desc": "Grootte ↓",
+    "date_asc": "Datum ↑",
+    "date_desc": "Datum ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter": {
+    "label": "Filter",
+    "all": "Alle types",
+    "folder": "Mappen",
+    "image": "Afbeeldingen",
+    "video": "Video's",
+    "audio": "Audio",
+    "document": "Documenten",
+    "archive": "Archieven",
+    "code": "Code",
+    "other": "Overig"
+  },
+  "stats": {
+    "items": "items",
+    "folders": "mappen",
+    "files": "bestanden",
+    "total": "Totaal"
+  },
+  "actions": {
+    "download": "Downloaden",
+    "share": "Delen",
+    "preview": "Voorbeeld",
+    "copy_link": "Link kopiëren",
+    "qr_code": "QR-code",
+    "close": "Sluiten",
+    "zoom_in": "Inzoomen",
+    "zoom_out": "Uitzoomen",
+    "reset_zoom": "Zoom herstellen",
+    "preview_not_available": "Voorbeeld niet beschikbaar voor dit bestandstype",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd!",
+    "view_rendered": "👁 Weergegeven bekijken",
+    "view_source": "📝 Bron bekijken",
+    "preview_as_text": "Voorbeeld als tekst",
+    "file_hashes": "Bestandshashes",
+    "copy_list": "Lijst kopiëren"
+  },
+  "messages": {
+    "empty": "Geen bestanden gevonden in deze map",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "link_copied": "Link gekopieerd naar klembord!",
+    "copy_failed": "Kopiëren van link mislukt"
+  },
+  "shortcuts": {
+    "title": "Help & Documentatie",
+    "keyboard_title": "Sneltoetsen",
+    "search": "Focus op zoeken",
+    "escape": "Modaal sluiten / Zoekfocus verwijderen",
+    "arrows": "Navigeren door items",
+    "enter": "Geselecteerd item openen",
+    "go_home": "Ga naar home",
+    "go_up": "Eén niveau omhoog",
+    "show_help": "Toon deze help",
+    "export_title": "Snelle export (Queryparameters)",
+    "export_desc": "Voeg deze parameters toe aan de URL voor snelle gegevensexport. Voeg &download toe om als bestand op te slaan.",
+    "format_json": "JSON-formaat",
+    "format_csv": "CSV-formaat",
+    "format_tsv": "TSV-formaat",
+    "format_ndjson": "NDJSON (Regel-gescheiden JSON)"
+  },
+  "general": {
+    "home": "Home"
+  },
+  "toolbar": {
+    "view": "Weergave:",
+    "sort": "Sorteren:",
+    "filter": "Filter:"
+  },
+  "sort_options": {
+    "name_asc": "Naam ↑",
+    "name_desc": "Naam ↓",
+    "size_asc": "Grootte ↑",
+    "size_desc": "Grootte ↓",
+    "date_asc": "Datum ↑",
+    "date_desc": "Datum ↓",
+    "type_asc": "Type ↑",
+    "type_desc": "Type ↓"
+  },
+  "filter_options": {
+    "all": "Alle types",
+    "folder": "Mappen",
+    "image": "Afbeeldingen",
+    "video": "Video's",
+    "audio": "Audio",
+    "document": "Documenten",
+    "archive": "Archieven",
+    "code": "Code"
+  },
+  "footer": {
+    "powered_by": "Mogelijk gemaakt door",
+    "your_ipv4": "Je IPv4:",
+    "your_ipv6": "IPv6:",
+    "checking": "Controleren..."
+  }
+}
